@@ -213,6 +213,10 @@
     <Compile Include="Migrations\201709142101343_overrideConventionsForGigAnfGenres.Designer.cs">
       <DependentUpon>201709142101343_overrideConventionsForGigAnfGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709142114083_populateDb.cs" />
+    <Compile Include="Migrations\201709142114083_populateDb.Designer.cs">
+      <DependentUpon>201709142114083_populateDb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AplicationUser.cs" />
@@ -302,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709142101343_overrideConventionsForGigAnfGenres.resx">
       <DependentUpon>201709142101343_overrideConventionsForGigAnfGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709142114083_populateDb.resx">
+      <DependentUpon>201709142114083_populateDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
