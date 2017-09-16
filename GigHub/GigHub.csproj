@@ -218,6 +218,14 @@
     <Compile Include="Migrations\201709142114083_populateDb.Designer.cs">
       <DependentUpon>201709142114083_populateDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709152036239_AddForingKeyPropertiesForGig.cs" />
+    <Compile Include="Migrations\201709152036239_AddForingKeyPropertiesForGig.Designer.cs">
+      <DependentUpon>201709152036239_AddForingKeyPropertiesForGig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709152106242_AddForingKeyPropertiesForGig1.cs" />
+    <Compile Include="Migrations\201709152106242_AddForingKeyPropertiesForGig1.Designer.cs">
+      <DependentUpon>201709152106242_AddForingKeyPropertiesForGig1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AplicationUser.cs" />
@@ -312,6 +320,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709142114083_populateDb.resx">
       <DependentUpon>201709142114083_populateDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709152036239_AddForingKeyPropertiesForGig.resx">
+      <DependentUpon>201709152036239_AddForingKeyPropertiesForGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709152106242_AddForingKeyPropertiesForGig1.resx">
+      <DependentUpon>201709152106242_AddForingKeyPropertiesForGig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
