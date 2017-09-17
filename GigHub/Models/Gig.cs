@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace GigHub.Models
 {
@@ -13,6 +14,11 @@ namespace GigHub.Models
         public string ArtistId { get; set; }
 
         public DateTime DateTime { get; set; }
+
+        public CultureInfo CultureInfo
+        { get
+            { return new CultureInfo("en-US"); }
+        }
 
         [Required]
         [StringLength(255)]
