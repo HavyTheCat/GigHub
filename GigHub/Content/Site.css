@@ -28,34 +28,51 @@ span.field-validation-error {
     font-weight: bold;
 }
 
-.voffset{margin-top:2px;}
-.voffset1{margin-top: 5px;}
-.voffset2{margin-top:10px;}
-.voffset3{margin-top:20px;}
-.voffset4{margin-top:40px;}
-.voffset5{margin-top:80px;}
+.voffset {
+    margin-top: 2px;
+}
+
+.voffset1 {
+    margin-top: 5px;
+}
+
+.voffset2 {
+    margin-top: 10px;
+}
+
+.voffset3 {
+    margin-top: 20px;
+}
+
+.voffset4 {
+    margin-top: 40px;
+}
+
+.voffset5 {
+    margin-top: 80px;
+}
 
 /* Bootstrap Overrides */
 .navbar-inverse {
     background-color: #FF5722;
     border-color: #FF5722;
 }
-.navbar-inverse .navbar-nav > li > a {
-    color: #ffffff;
-}
 
-.navbar-inverse .navbar-brand {
-    color: #ffffff;
-}
+    .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+    }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-   
-    background-color: rgba(239, 95, 50, 0.49);
-}
+    .navbar-inverse .navbar-brand {
+        color: #ffffff;
+    }
+
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+        background-color: rgba(239, 95, 50, 0.49);
+    }
+
 .dropdown-menu {
-    box-shadow:none;
-    -webkit-box-shadow:none;
-
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
@@ -64,10 +81,10 @@ span.field-validation-error {
 }
 
 .navbar-brand {
-    font-weight:700;
+    font-weight: 700;
 }
 
-body{
+body {
     font-size: 17px;
 }
 
@@ -84,76 +101,84 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
- 
+    font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.form-control{
+.form-control {
+    height: 44px;
     font-size: 17px;
     font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 20px 15px;
+    height:44px;
     border-radius: 5px;
+}
 
-}
-.form-control:focus{
-    border-color: #2196f3;
-    box-shadow: none;
-    -webkit-box-shadow:none;
-}
+    .form-control:focus {
+        border-color: #2196f3;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
 .btn {
-   
-    
     border-radius: 9px;
 }
 
 
 /* Page-level styles*/
 .gigs {
-    list-style:none;
+    list-style: none;
 }
 
-.gigs > li .date {
-    background:red;
-    color:white;
-    text-align:center;
-    width:60px;
-    border-radius:8px;
-}
-
-.gigs > li .date .month{
-    text-transform:uppercase;
-    font-size:14px;
-    font-weight:bold;
-    padding: 2px 6px;
-}
-    .gigs > li .date .day {
-        background:#f7f7f7;
-        color:#333;
-        font-size:20px;
-        padding:6px 12px;
+    .gigs > li .date {
+        background: red;
+        color: white;
+        text-align: center;
+        width: 60px;
+        border-radius: 8px;
     }
 
-.gigs > li {
-    position:relative;
-    margin:30px;
+        .gigs > li .date .month {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 2px 6px;
+        }
+
+        .gigs > li .date .day {
+            background: #f7f7f7;
+            color: #333;
+            font-size: 20px;
+            padding: 6px 12px;
+        }
+
+    .gigs > li {
+        position: relative;
+        margin: 30px;
     }
-.gigs > li .details{
-    position:absolute;
-    top:0;
-    left:70px;
-}
 
-.gigs > li .details .artist{
-    font-weight:bold;
-    display:block;
-}
+        .gigs > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
 
-.gigs > li .details .genre{
-    font-size:15px;
-    
-}
+            .gigs > li .details .artist {
+                font-weight: bold;
+                display: block;
+            }
 
+            .gigs > li .details .genre {
+                font-size: 15px;
+            }
+
+        .gigs > li .actions {
+            font-size: 12px;
+            display: none;
+        }
+
+        .gigs > li:hover .actions {
+            display: block;
+        }
