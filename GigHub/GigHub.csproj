@@ -266,6 +266,10 @@
     <Compile Include="Migrations\201709241644054_addNotificationModel.Designer.cs">
       <DependentUpon>201709241644054_addNotificationModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709261930407_notificationOrign.cs" />
+    <Compile Include="Migrations\201709261930407_notificationOrign.Designer.cs">
+      <DependentUpon>201709261930407_notificationOrign.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AplicationUser.cs" />
     <Compile Include="Models\Attendance.cs" />
@@ -400,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709241644054_addNotificationModel.resx">
       <DependentUpon>201709241644054_addNotificationModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261930407_notificationOrign.resx">
+      <DependentUpon>201709261930407_notificationOrign.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
