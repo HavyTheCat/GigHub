@@ -1,0 +1,239 @@
+﻿@color_1: red;
+@color_2: #ffffff;
+@color_3: white;
+@color_4: #333;
+@font_family_1: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@background_color_1: #FF5722;
+@background_color_2: rgba(239, 95, 50, 0.49);
+@border_color_1: #FF5722;
+@border_color_2: #2196f3;
+@border_top_color_1: #ffffff;
+@border_bottom_color_1: #ffffff;
+
+/* Set padding to keep content from hitting the edges */
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/* Set width on the form input elements since they're 100% wide by default */
+/* Bootstrap Overrides */
+/* Page-level styles*/
+body {
+	padding-top: 70px;
+	padding-bottom: 20px;
+	font-size: 17px;
+	font-family: @font_family_1;
+}
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.dl-horizontal {
+	dt {
+		white-space: normal;
+	}
+}
+input {
+	max-width: 280px;
+}
+select {
+	max-width: 280px;
+}
+textarea {
+	max-width: 280px;
+}
+span.field-validation-error {
+	color: @color_1;
+	font-weight: bold;
+}
+.voffset {
+	margin-top: 2px;
+}
+.voffset1 {
+	margin-top: 5px;
+}
+.voffset2 {
+	margin-top: 10px;
+}
+.voffset3 {
+	margin-top: 20px;
+}
+.voffset4 {
+	margin-top: 40px;
+}
+.voffset5 {
+	margin-top: 80px;
+}
+.popover {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.navbar-inverse {
+	background-color: @background_color_1;
+	border-color: @border_color_1;
+	.navbar-nav {
+		>li {
+			>a {
+				color: @color_2;
+			}
+		}
+		>.open {
+			>a {
+				background-color: @background_color_2;
+				&:hover {
+					background-color: @background_color_2;
+				}
+				&:focus {
+					background-color: @background_color_2;
+				}
+			}
+		}
+		>.dropdown {
+			>a {
+				.caret {
+					border-top-color: @border_top_color_1;
+					border-bottom-color: @border_bottom_color_1;
+				}
+			}
+		}
+	}
+	.navbar-brand {
+		color: @color_2;
+	}
+	.notifications {
+		position: relative;
+		.badge {
+			position: absolute;
+			top: 8px;
+			right: -1px;
+			background: #c33d13;
+		}
+	}
+}
+.dropdown-menu {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.navbar-brand {
+	font-weight: 700;
+}
+h1 {
+	font-family: @font_family_1;
+}
+h2 {
+	font-family: @font_family_1;
+}
+h3 {
+	font-family: @font_family_1;
+}
+h4 {
+	font-family: @font_family_1;
+}
+h5 {
+	font-family: @font_family_1;
+}
+h6 {
+	font-family: @font_family_1;
+}
+.h1 {
+	font-family: @font_family_1;
+}
+.h2 {
+	font-family: @font_family_1;
+}
+.h3 {
+	font-family: @font_family_1;
+}
+.h4 {
+	font-family: @font_family_1;
+}
+.h5 {
+	font-family: @font_family_1;
+}
+.h6 {
+	font-family: @font_family_1;
+}
+.form-group {
+	margin-bottom: 20px;
+}
+.form-control {
+	font-size: 17px;
+	font-family: @font_family_1;
+	height: 44px;
+	border-radius: 5px;
+	&:focus {
+		border-color: @border_color_2;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+}
+.btn {
+	border-radius: 9px;
+}
+.gigs {
+	list-style: none;
+	li {
+		.date {
+			background: red;
+			color: @color_3;
+			text-align: center;
+			width: 60px;
+			border-radius: 8px;
+			.month {
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: bold;
+				padding: 2px 6px;
+			}
+			.day {
+				background: #f7f7f7;
+				color: @color_4;
+				font-size: 20px;
+				padding: 6px 12px;
+			}
+		}
+		&:hover {
+			.actions {
+				display: block;
+			}
+		}
+	}
+	>li {
+		position: relative;
+		margin: 30px;
+		.details {
+			position: absolute;
+			top: 0;
+			left: 70px;
+			.artist {
+				font-weight: bold;
+				display: block;
+			}
+			.genre {
+				font-size: 15px;
+			}
+		}
+		.actions {
+			font-size: 12px;
+			display: none;
+		}
+	}
+}
+.popover-notifications {
+	.popover-content {
+		padding: 0;
+	}
+	ul.notifications {
+		list-style: none;
+		padding-left: 0;
+		>li {
+			border-bottom: 1px solid #ddd;
+			padding: 10px;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	.highlight {
+		font-weight: bold;
+	}
+}
