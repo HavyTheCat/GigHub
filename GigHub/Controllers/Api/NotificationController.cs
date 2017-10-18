@@ -23,6 +23,24 @@ namespace GigHub.Controllers.Api
             _context = new ApplicationDbContext();
         }
 
+        [HttpPost]
+        public IHttpActionResult NotificationShown(int Id)
+        {
+            var userId = User.Identity.GetUserId();
+            var notification = _context.UserNotification
+               .Where(un => un.UserId == userId && !un.isRead && un.NotificationId == Id)
+               .ToList();
+
+            notification.ForEach(n => n.Read());
+            _context.SaveChanges();
+
+                
+
+
+            return Ok();
+
+        }
+
         public IEnumerable<NotificationDto> GetNewNotifications()
         {
             var userId = User.Identity.GetUserId();
