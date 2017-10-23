@@ -254,6 +254,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Persistence\EntityConfigurations\ApplicationUserConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\AttendanceConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\FollowingConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\GenreConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\GigConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\NotificationConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\UserNotificationConfiguration.cs" />
     <Compile Include="Persistence\Migrations\201709142020404_InitialModel.cs" />
     <Compile Include="Persistence\Migrations\201709142020404_InitialModel.Designer.cs">
       <DependentUpon>201709142020404_InitialModel.cs</DependentUpon>
@@ -261,6 +268,10 @@
     <Compile Include="Persistence\Migrations\201710191406314_test.cs" />
     <Compile Include="Persistence\Migrations\201710191406314_test.Designer.cs">
       <DependentUpon>201710191406314_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persistence\Migrations\201710232027296_fluentApi.cs" />
+    <Compile Include="Persistence\Migrations\201710232027296_fluentApi.Designer.cs">
+      <DependentUpon>201710232027296_fluentApi.cs</DependentUpon>
     </Compile>
     <Compile Include="Persistence\Migrations\Configuration.cs" />
     <Compile Include="Core\Models\AplicationUser.cs" />
@@ -405,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Persistence\Migrations\201710191406314_test.resx">
       <DependentUpon>201710191406314_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persistence\Migrations\201710232027296_fluentApi.resx">
+      <DependentUpon>201710232027296_fluentApi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
